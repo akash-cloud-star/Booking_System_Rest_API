@@ -43,16 +43,23 @@ npm install -g newman-reporter-htmlextra
 - Create Data Sets Using the Dynamic Random Variables.
 ### 2.Verify Created Booking Details
 #### In the test case you must be need to validate the following field values:
-- First Name
-- Last Name
-- totalprice
-- depositpaid
-- bookingdates
-- checkin
-- checkout
-- additionalneeds
+Body :
+```json
+{
+	"firstname": "Sally",
+	"lastname": "Brown",
+	"totalprice": 111,
+	"depositpaid": true,
+	"bookingdates": {
+    	"checkin": "2013-02-23",
+    	"checkout": "2014-10-23"
+	},
+	"additionalneeds": "Breakfast"
+}
+
+```
 ### 3.Create Token
-Body:
+Body :
 ```json
 {
 	"username": "admin",
