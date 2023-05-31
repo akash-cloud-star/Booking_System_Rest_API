@@ -1,4 +1,4 @@
-# [Booking_System_Rest_API]
+# Booking_System_Rest_API
 ## :page_facing_up: API Test Report
 ## :memo: How to run this project
 ### 🖥 Run by Postman
