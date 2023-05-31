@@ -40,8 +40,28 @@ npm install -g newman-reporter-htmlextra
 [Postman](https://documenter.getpostman.com/view/25930416/2s93mAUfPS)
 ## Test case list:
 ### 1.Create Booking System
-- Create Data Sets Using the Dynamic Random Variables.
+
 ### 2.Verify Created Booking Details
+``` url
+https://restful-booker.herokuapp.com/booking/
+```
+```json
+  https://restful-booker.herokuapp.com/booking \
+  -H 'Content-Type: application/json' \
+  -d '{
+	"firstname" : "Jim",
+	"lastname" : "Brown",
+	"totalprice" : 111,
+	"depositpaid" : true,
+	"bookingdates" : {
+    	"checkin" : "2018-01-01",
+    	"checkout" : "2019-01-01"
+	},
+	"additionalneeds" : "Breakfast"
+}'
+
+```
+
 #### In the test case you must be need to validate the following field values:
 Body :
 ```json
@@ -69,38 +89,37 @@ Body :
 	"password": "password123"
 }
 ```
-### 4.Verify Updated Student Details
-#### In the test case you must be need to validate the following field values:
-- First Name
-- Middle Name
-- Last Name
-- Date of Birth
-### 5.Create Technical skills Create Student Address
-#### In the test case you must be need to validate the following field values:
-- Only Message
-### 6.Get the Student's Full Details
-#### In the test case you must be need to validate the following field values:
-- First Name
-- Middle Name
-- Last Name
-- Date of Birth
-- Language
-- Year Of Experience
-- Last Used Date
-- City
-- House Number
-- Country
-- State
-- Home Address
-- Std Code
-- Mobile
+### 4.Verify Updated Booking Details
+``` url
+https://restful-booker.herokuapp.com/booking/id
+```
+```json
+
+
+  -H 'Cookie: token=abc123' \
+  -d '{
+	"firstname" : "James",
+	"lastname" : "Brown",
+	"totalprice" : 111,
+	"depositpaid" : true,
+	"bookingdates" : {
+    	"checkin" : "2018-01-01",
+    	"checkout" : "2019-01-01"
+	},
+	"additionalneeds" : "Breakfast"
+}
+
+```
 ### 7.Delete Specific Student
 #### In the test case you must be need to validate the following field values:
-- Only Message
+``` url
+https://restful-booker.herokuapp.com/booking/1
+```
 # Newman Report
 
-![Screenshot 2023-05-29 194425](https://github.com/akash-cloud-star/Student_Rest_API/assets/61002722/332962d3-8291-4eaf-8385-49a1800c66b8)
-![Screenshot 2023-05-29 194439](https://github.com/akash-cloud-star/Student_Rest_API/assets/61002722/2eca098d-0f53-4f75-810a-f99381cc61ac)
-![Screenshot 2023-05-29 194453](https://github.com/akash-cloud-star/Student_Rest_API/assets/61002722/c0eafaf7-5bcf-43aa-abcd-81be02cc9858)
+![Screenshot 2023-05-31 171318](https://github.com/akash-cloud-star/Booking_System_Rest_API/assets/61002722/91d39135-a620-427f-9827-682678216fba)
+![Screenshot 2023-05-31 171342](https://github.com/akash-cloud-star/Booking_System_Rest_API/assets/61002722/8def37fa-34ed-4323-985d-e0be6ec3437b)
+![Screenshot 2023-05-31 171406](https://github.com/akash-cloud-star/Booking_System_Rest_API/assets/61002722/c21a7d2e-aaee-409f-a4dd-e39efda68912)
+
 
 
