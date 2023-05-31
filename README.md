@@ -40,8 +40,6 @@ npm install -g newman-reporter-htmlextra
 [Postman](https://documenter.getpostman.com/view/25930416/2s93mAUfPS)
 ## Test case list:
 ### 1.Create Booking System
-
-### 2.Verify Created Booking Details
 ``` url
 https://restful-booker.herokuapp.com/booking/
 ```
@@ -61,7 +59,7 @@ https://restful-booker.herokuapp.com/booking/
 }'
 
 ```
-
+### 2.Verify Created Booking Details
 #### In the test case you must be need to validate the following field values:
 Body :
 ```json
