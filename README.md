@@ -59,6 +59,9 @@ Body :
 
 ```
 ### 3.Create Token
+``` url
+https://restful-booker.herokuapp.com/auth
+```
 Body :
 ```json
 {
