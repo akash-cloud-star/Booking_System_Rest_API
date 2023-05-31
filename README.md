@@ -39,15 +39,26 @@ npm install -g newman-reporter-htmlextra
 #### Postman Documentations
 [Postman](https://documenter.getpostman.com/view/25930416/2s93mAUfPS)
 ## Test case list:
-### 1.Create student details
+### 1.Create Booking System
 - Create Data Sets Using the Dynamic Random Variables.
-### 2.Verify Crated Student Details
+### 2.Verify Created Booking Details
+#### In the test case you must be need to validate the following field values:
 - First Name
-- Middle Name
 - Last Name
-- Date of Birth
-### 3.Update Student
-- Only Message
+- totalprice
+- depositpaid
+- bookingdates
+- checkin
+- checkout
+- additionalneeds
+### 3.Create Token
+Body:
+```json
+{
+	"username": "admin",
+	"password": "password123"
+}
+```
 ### 4.Verify Updated Student Details
 #### In the test case you must be need to validate the following field values:
 - First Name
