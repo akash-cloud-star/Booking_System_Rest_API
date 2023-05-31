@@ -10,15 +10,15 @@
 * Open cmd to the file location.
 * Run Command:
 console
-newman run Practise.postman_collection.json -e Exam.postman_environment.json
+newman run First.postman_collection.json -e Batchit.postman_environment.json
 * Run Command for Report:
 
 For html:
 console
-newman run Practise.postman_collection.json -e Exam.postman_environment.json -r cli,html
+newman run First.postman_collection.json -e Batchit.postman_environment.json -r cli,html
 For htmlextra:
 console
-newman run Practise.postman_collection.json -e Exam.postman_environment.json -r cli,htmlextra
+newman run First.postman_collection.json -e Batchit.postman_environment.json -r cli,htmlextra
 ### :technologist: Technology used
 <img src="https://voyager.postman.com/logo/postman-logo-icon-orange.svg"  width="15" height="15"> Postman & Newman
 ### Prerequisite
@@ -35,9 +35,9 @@ npm install -g newman-reporter-htmlextra
  console
 npm install -g newman-reporter-htmlextra
 ### API Documentations
-[PDF](https://docs.google.com/document/d/1LF3FeN4obAZTn-QeuWZzteLn8X1m8ww2/edit)
+[PDF](https://docs.google.com/document/d/1YyzPMbEu6eEMFrvp-WHiJW-SvDTJvikqx1QGyyFgRXw/edit?usp=sharing)
 #### Postman Documentations
-[Postman](https://documenter.getpostman.com/view/13082503/2s8YYMnLtN)
+[Postman](https://documenter.getpostman.com/view/25930416/2s93mAUfPS)
 ## Test case list:
 ### 1.Create student details
 - Create Data Sets Using the Dynamic Random Variables.
